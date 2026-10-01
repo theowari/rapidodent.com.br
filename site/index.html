@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rapidodent | Odontologia premium em São João da Boa Vista</title>
+  <meta name="description" content="Clínica odontológica premium em São João da Boa Vista. Implantes com cirurgia guiada, protocolo em 3 dias, facetas e clareamento. Primeira consulta VIP gratuita com scanner 3D.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#68072A">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Protótipo: fontes via Google Fonts. Em produção, auto-hospedar Manrope com font-display: swap. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+
+  <!-- Phosphor Icons: peso light (linha fina, como na identidade) + regular para botões -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&w=1100&q=75">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a class="brand" href="#topo" aria-label="Rapidodent, página inicial">
+        <img src="assets/img/logo-rd.png" alt="" width="26" height="36">
+        <span>Rapidodent</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#agendar">Agendamento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn--light btn--sm nav-cta" href="https://wa.me/5519991076349" data-wa>
+        <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+        Agendar consulta
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" data-nav-toggle>
+        <span class="sr-only">Abrir menu</span>
+        <span class="burger" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile em tela cheia. Fechado: invisível e fora da ordem de foco (visibility: hidden). -->
+    <div class="mobile-menu" id="menu-mobile" data-mobile-menu>
+      <nav class="container mobile-menu__inner" aria-label="Menu móvel">
+        <ul class="mobile-menu__links" role="list">
+          <li style="--i:0"><a href="#tratamentos">Tratamentos<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+          <li style="--i:1"><a href="#tecnologia">Tecnologia<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+          <li style="--i:2"><a href="#como-funciona">Como funciona<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+          <li style="--i:3"><a href="#agendar">Agendamento<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+          <li style="--i:4"><a href="#duvidas">Dúvidas<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+          <li style="--i:5"><a href="#contato">Contato<i class="ph-light ph-arrow-right" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="mobile-menu__foot" style="--i:6">
+          <a class="btn btn--light btn--block" href="https://wa.me/5519991076349" data-wa>
+            <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+            Agendar consulta
+          </a>
+          <p><i class="ph-light ph-map-pin" aria-hidden="true"></i>Jardim São Nicolau, São João da Boa Vista</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="topo" data-hero>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--on-wine hero__in" style="--d:0">Odontologia premium em São João da Boa Vista</p>
+          <h1 class="hero__title hero__in" style="--d:1">Seu sorriso.<br><em>Sua confiança.</em></h1>
+          <p class="hero__lead hero__in" style="--d:2">Tecnologia de ponta e atendimento humanizado para você voltar a sorrir sem medo, na hora marcada.</p>
+          <div class="hero__actions hero__in" style="--d:3">
+            <a class="btn btn--light" href="https://wa.me/5519991076349" data-wa>
+              <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+              Agendar consulta
+            </a>
+            <a class="btn btn--ghost-light" href="#tratamentos">
+              Ver tratamentos
+              <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero__media hero__in" style="--d:2">
+          <span class="hero__ring" aria-hidden="true"></span>
+          <img
+            src="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&w=1100&q=75"
+            alt="Dentista conversando com paciente sorridente no consultório"
+            width="880" height="1100" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS (painel claro sobre o vinho) ============ -->
+    <section class="diffs" aria-labelledby="diffs-title">
+      <div class="container">
+        <div class="diffs__panel" data-reveal>
+          <h2 class="diffs__title" id="diffs-title">O que faz da Rapidodent uma clínica diferente?</h2>
+          <ul class="diffs__list" role="list">
+            <li>
+              <i class="ph-light ph-clock" aria-hidden="true"></i>
+              <h3>Hora marcada</h3>
+              <p>Você é atendido no horário combinado.</p>
+            </li>
+            <li>
+              <i class="ph-light ph-scan" aria-hidden="true"></i>
+              <h3>Tecnologia de ponta</h3>
+              <p>Scanner digital, laser e cirurgia guiada.</p>
+            </li>
+            <li>
+              <i class="ph-light ph-coffee" aria-hidden="true"></i>
+              <h3>Ambiente acolhedor</h3>
+              <p>Um cafezinho especial enquanto você aguarda.</p>
+            </li>
+            <li>
+              <i class="ph-light ph-hand-heart" aria-hidden="true"></i>
+              <h3>Equipe empática</h3>
+              <p>Você é ouvido, acolhido e bem orientado.</p>
+            </li>
+            <li>
+              <i class="ph-light ph-lightning" aria-hidden="true"></i>
+              <h3>Rapidez com excelência</h3>
+              <p>Agilidade sem abrir mão da precisão.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRATAMENTOS (bento, 7 itens = 7 células) ============ -->
+    <section class="section" id="tratamentos" aria-labelledby="trat-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 class="h2" id="trat-title">Tratamentos completos, feitos com precisão</h2>
+          <p class="lead">Da limpeza ao protocolo, cada tratamento começa com um planejamento pensado para você.</p>
+        </header>
+
+        <div class="bento">
+          <a class="tile tile--photo tile--feature" href="https://wa.me/5519991076349" data-wa data-wa-msg="Protocolo (dentes fixos em 3 dias)" data-reveal style="--i:0">
+            <img src="https://images.unsplash.com/photo-1663755489920-5e09f66d011a?auto=format&fit=crop&w=1100&q=75" alt="Paciente sorrindo durante atendimento odontológico" loading="lazy" width="1100" height="900">
+            <div class="tile__body">
+              <span class="tile__stat">3 dias</span>
+              <h3>Protocolo: dentes fixos</h3>
+              <p>Cirurgia e prótese finalizadas em apenas 3 dias.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--photo tile--wide" href="https://wa.me/5519991076349" data-wa data-wa-msg="Implantes com cirurgia guiada" data-reveal style="--i:1">
+            <img src="https://images.unsplash.com/photo-1667133295352-ef4c83620e8e?auto=format&fit=crop&w=900&q=75" alt="Dentista examinando paciente com espelho clínico" loading="lazy" width="900" height="500">
+            <div class="tile__body">
+              <h3>Implantes com cirurgia guiada</h3>
+              <p>Planejamento digital da posição de cada implante. Sem pontos.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--photo" href="https://wa.me/5519991076349" data-wa data-wa-msg="Facetas em porcelana" data-reveal style="--i:2">
+            <img src="https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?auto=format&fit=crop&w=700&q=75" alt="Close de sorriso com dentes claros e alinhados" loading="lazy" width="700" height="700">
+            <div class="tile__body">
+              <h3>Facetas em porcelana</h3>
+              <p>Lâminas ultrafinas para cor e forma.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--tint" href="https://wa.me/5519991076349" data-wa data-wa-msg="Clareamento dental" data-reveal style="--i:3">
+            <i class="ph-light ph-sparkle tile__icon" aria-hidden="true"></i>
+            <div class="tile__body">
+              <h3>Clareamento dental</h3>
+              <p>Sorriso mais branco e natural, no consultório ou em casa.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--gold" href="https://wa.me/5519991076349" data-wa data-wa-msg="Próteses fixas e removíveis" data-reveal style="--i:4">
+            <i class="ph-light ph-tooth tile__icon" aria-hidden="true"></i>
+            <div class="tile__body">
+              <h3>Próteses fixas e removíveis</h3>
+              <p>Devolvem a função de mastigar, falar e sorrir.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--plain" href="https://wa.me/5519991076349" data-wa data-wa-msg="Tratamento de canal" data-reveal style="--i:5">
+            <i class="ph-light ph-shield-check tile__icon" aria-hidden="true"></i>
+            <div class="tile__body">
+              <h3>Tratamento de canal</h3>
+              <p>Alívio da dor em menos sessões.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+
+          <a class="tile tile--wine tile--wide" href="https://wa.me/5519991076349" data-wa data-wa-msg="Limpeza e profilaxia" data-reveal style="--i:6">
+            <i class="ph-light ph-drop tile__icon" aria-hidden="true"></i>
+            <div class="tile__body">
+              <h3>Limpeza e profilaxia completa</h3>
+              <p>Remove a placa e o tártaro que a escovação diária não alcança.</p>
+            </div>
+            <i class="ph ph-arrow-up-right tile__arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIA (bloco vinho) ============ -->
+    <section class="tech" id="tecnologia" aria-labelledby="tech-title">
+      <div class="container tech__grid">
+        <figure class="tech__media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&fit=crop&w=900&q=75" alt="Dentista mostrando imagem digital dos dentes na tela durante a consulta" loading="lazy" width="900" height="1125">
+        </figure>
+
+        <div class="tech__copy">
+          <p class="eyebrow eyebrow--on-wine" data-reveal>Tecnologia</p>
+          <h2 class="h2 h2--on-wine" id="tech-title" data-reveal>Precisão que você pode enxergar.</h2>
+          <p class="lead lead--on-wine" data-reveal>Na consulta, a câmera intraoral mostra cada detalhe dos seus dentes na tela. Você vê, entende e decide junto com a gente.</p>
+
+          <ul class="tech__list" role="list">
+            <li data-reveal style="--i:0">
+              <i class="ph-light ph-cube-focus" aria-hidden="true"></i>
+              <div>
+                <h3>Scanner 3D</h3>
+                <p>Modelo digital do seu sorriso, sem moldagem com massa.</p>
+              </div>
+            </li>
+            <li data-reveal style="--i:1">
+              <i class="ph-light ph-camera" aria-hidden="true"></i>
+              <div>
+                <h3>Câmera intraoral</h3>
+                <p>Seus dentes em detalhe, na tela, durante a consulta.</p>
+              </div>
+            </li>
+            <li data-reveal style="--i:2">
+              <i class="ph-light ph-target" aria-hidden="true"></i>
+              <div>
+                <h3>Cirurgia guiada</h3>
+                <p>Cada implante é planejado digitalmente antes da cirurgia.</p>
+              </div>
+            </li>
+            <li data-reveal style="--i:3">
+              <i class="ph-light ph-waveform" aria-hidden="true"></i>
+              <div>
+                <h3>Laser</h3>
+                <p>Procedimentos mais precisos e confortáveis.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HUMANIZAÇÃO (manifesto + faixa de fotos) ============ -->
+    <section class="section human" aria-labelledby="human-title">
+      <div class="container">
+        <div class="human__copy" data-reveal>
+          <h2 class="human__title" id="human-title">Antes de tratar o seu sorriso, <em>a gente escuta você.</em></h2>
+          <p class="lead">A Rapidodent nasceu para transformar sorrisos e resgatar a confiança das pessoas no consultório odontológico. Aqui, experiências traumáticas ficam para trás.</p>
+        </div>
+
+        <div class="human__band">
+          <figure class="human__a" data-reveal style="--i:0">
+            <img src="https://images.unsplash.com/photo-1606811842243-af7e16970c1f?auto=format&fit=crop&w=1000&q=75" alt="Dentista explicando o tratamento para a paciente" loading="lazy" width="1000" height="750">
+          </figure>
+          <figure class="human__b" data-reveal style="--i:1">
+            <img src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&fit=crop&w=700&q=75" alt="Consultório claro e moderno" loading="lazy" width="700" height="933">
+          </figure>
+          <figure class="human__c" data-reveal style="--i:2">
+            <img src="https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&fit=crop&w=800&q=75" alt="Sala de atendimento com luz natural" loading="lazy" width="800" height="800">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA (linha do tempo) ============ -->
+    <section class="section journey" id="como-funciona" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <h2 class="h2" id="journey-title">Seu tratamento começa com escuta, conforto e clareza</h2>
+          <p class="lead">Você sabe exatamente o que acontece depois do primeiro contato.</p>
+        </header>
+
+        <ol class="journey__steps" role="list">
+          <li data-reveal style="--i:0">
+            <span class="journey__icon"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i></span>
+            <h3>Agende pelo WhatsApp</h3>
+            <p>Ou pelo telefone fixo. Você escolhe o melhor horário.</p>
+          </li>
+          <li data-reveal style="--i:1">
+            <span class="journey__icon"><i class="ph-light ph-scan" aria-hidden="true"></i></span>
+            <h3>Consulta VIP gratuita</h3>
+            <p>Uma hora de avaliação com scanner 3D. Juntos, montamos seu plano de tratamento.</p>
+          </li>
+          <li data-reveal style="--i:2">
+            <span class="journey__icon"><i class="ph-light ph-handshake" aria-hidden="true"></i></span>
+            <h3>Acompanhamento próximo</h3>
+            <p>Atenção exclusiva em todas as etapas, até o sorriso novo.</p>
+          </li>
+        </ol>
+
+        <div class="journey__cta" data-reveal>
+          <a class="btn btn--wine" href="https://wa.me/5519991076349" data-wa>
+            <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+            Agendar consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGENDAMENTO (agenda online + e-mail) ============ -->
+    <section class="section booking" id="agendar" aria-labelledby="booking-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 class="h2" id="booking-title">Agende do seu jeito</h2>
+          <p class="lead">Escolha um horário na agenda online ou envie sua solicitação por e-mail. O WhatsApp continua à disposição.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Formas de agendamento" data-reveal data-tabs>
+          <button class="tabs__tab" type="button" role="tab" id="tab-agenda" aria-controls="panel-agenda" aria-selected="true">
+            <i class="ph-light ph-calendar-dots" aria-hidden="true"></i>
+            Agenda online
+            <span class="tabs__tag">Prévia</span>
+          </button>
+          <button class="tabs__tab" type="button" role="tab" id="tab-email" aria-controls="panel-email" aria-selected="false" tabindex="-1">
+            <i class="ph-light ph-envelope-simple" aria-hidden="true"></i>
+            Por e-mail
+          </button>
+        </div>
+
+        <!-- ---------- Painel 1: Agenda online (prévia da integração com Google Agenda) ---------- -->
+        <!-- PROTÓTIPO: horários e ocupação são simulados no navegador. Sem backend. -->
+        <div class="tab-panel" role="tabpanel" id="panel-agenda" aria-labelledby="tab-agenda" data-panel>
+          <div class="scheduler" data-scheduler>
+            <div class="scheduler__cal">
+              <div class="cal__head">
+                <p class="cal__month" aria-live="polite" data-cal-month>Outubro 2026</p>
+                <div class="cal__nav">
+                  <button class="icon-btn icon-btn--sm" type="button" data-cal-prev aria-label="Mês anterior"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+                  <button class="icon-btn icon-btn--sm" type="button" data-cal-next aria-label="Próximo mês"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <div class="cal__weekdays" aria-hidden="true">
+                <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+              </div>
+              <div class="cal__grid" data-cal-grid role="group" aria-label="Dias do mês"></div>
+              <p class="cal__legend"><span class="cal__legend-dot" aria-hidden="true"></span>Dias com horários livres</p>
+            </div>
+
+            <div class="scheduler__side">
+              <ol class="steps" role="list" aria-label="Etapas do agendamento">
+                <li data-step-label="day" class="is-active">Dia</li>
+                <li data-step-label="slot">Horário</li>
+                <li data-step-label="form">Seus dados</li>
+              </ol>
+
+              <!-- Etapa: nenhum dia escolhido -->
+              <div class="step" data-step="empty">
+                <div class="step__empty">
+                  <i class="ph-light ph-calendar-check" aria-hidden="true"></i>
+                  <p class="step__title">Escolha um dia no calendário</p>
+                  <p class="step__hint">Os horários livres aparecem aqui, direto da agenda da clínica.</p>
+                </div>
+              </div>
+
+              <!-- Etapa: horários do dia -->
+              <div class="step" data-step="slots" hidden>
+                <p class="step__title" data-slots-title>Horários</p>
+                <p class="step__hint">Consulta VIP gratuita, duração de 1 hora.</p>
+                <div class="slots" data-slots role="group" aria-label="Horários disponíveis"></div>
+              </div>
+
+              <!-- Etapa: dados do paciente -->
+              <form class="step form" data-step="form" data-booking-form novalidate hidden>
+                <div class="summary">
+                  <i class="ph-light ph-clock" aria-hidden="true"></i>
+                  <p data-summary>Quinta, 9 de outubro às 10:00</p>
+                  <button class="link-btn" type="button" data-change-slot>Alterar</button>
+                </div>
+
+                <div class="field">
+                  <label for="bk-name">Nome completo</label>
+                  <input id="bk-name" name="name" type="text" autocomplete="name" required aria-describedby="bk-name-err">
+                  <p class="field__error" id="bk-name-err" data-error-for="bk-name"></p>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="bk-email">E-mail</label>
+                    <input id="bk-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="bk-email-help bk-email-err">
+                    <p class="field__help" id="bk-email-help">O convite da consulta chega aqui.</p>
+                    <p class="field__error" id="bk-email-err" data-error-for="bk-email"></p>
+                  </div>
+                  <div class="field">
+                    <label for="bk-phone">WhatsApp</label>
+                    <input id="bk-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(19) 99999-9999" required aria-describedby="bk-phone-err" data-phone>
+                    <p class="field__error" id="bk-phone-err" data-error-for="bk-phone"></p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="bk-treatment">Motivo da consulta</label>
+                  <select id="bk-treatment" name="treatment">
+                    <option>Avaliação (consulta VIP)</option>
+                    <option>Protocolo: dentes fixos</option>
+                    <option>Implantes</option>
+                    <option>Facetas em porcelana</option>
+                    <option>Clareamento dental</option>
+                    <option>Próteses</option>
+                    <option>Tratamento de canal</option>
+                    <option>Limpeza e profilaxia</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--wine btn--block" type="submit" data-submit>
+                  <i class="ph ph-calendar-plus" aria-hidden="true"></i>
+                  <span data-submit-label>Confirmar horário</span>
+                </button>
+              </form>
+
+              <!-- Etapa: confirmado -->
+              <div class="step" data-step="done" hidden tabindex="-1">
+                <div class="done">
+                  <span class="done__icon"><i class="ph ph-check" aria-hidden="true"></i></span>
+                  <p class="step__title">Horário reservado</p>
+                  <p class="step__hint" data-done-text>Enviamos a confirmação para o seu e-mail.</p>
+
+                  <div class="event">
+                    <p class="event__title">Consulta VIP · Rapidodent</p>
+                    <p><i class="ph-light ph-calendar-blank" aria-hidden="true"></i><span data-event-date></span></p>
+                    <p><i class="ph-light ph-map-pin" aria-hidden="true"></i>Rua Henrique Cabral de Vasconcelos, 2120</p>
+                  </div>
+
+                  <a class="btn btn--wine btn--block" href="#" target="_blank" rel="noopener" data-gcal-link>
+                    <i class="ph ph-google-logo" aria-hidden="true"></i>
+                    Salvar no Google Agenda
+                  </a>
+                  <button class="link-btn" type="button" data-restart>Fazer outro agendamento</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nota de apresentação (pitch). Remover quando a integração real estiver no ar. -->
+          <aside class="pitch-note" aria-label="Como funciona a integração com o Google Agenda">
+            <p class="pitch-note__title"><i class="ph-light ph-info" aria-hidden="true"></i>Prévia da integração com Google Agenda</p>
+            <ul role="list">
+              <li>
+                <i class="ph-light ph-arrows-clockwise" aria-hidden="true"></i>
+                <div><h3>Disponibilidade em tempo real</h3><p>O site lê a agenda da clínica e mostra apenas os horários livres.</p></div>
+              </li>
+              <li>
+                <i class="ph-light ph-calendar-plus" aria-hidden="true"></i>
+                <div><h3>Evento criado automaticamente</h3><p>A consulta entra na agenda da equipe e o horário fica bloqueado.</p></div>
+              </li>
+              <li>
+                <i class="ph-light ph-bell-ringing" aria-hidden="true"></i>
+                <div><h3>Convite e lembrete</h3><p>O paciente recebe o convite por e-mail, com lembrete antes da consulta.</p></div>
+              </li>
+            </ul>
+            <p class="pitch-note__foot">Neste protótipo, os horários são ilustrativos e nenhum dado é enviado.</p>
+          </aside>
+        </div>
+
+        <!-- ---------- Painel 2: Solicitação por e-mail ---------- -->
+        <div class="tab-panel" role="tabpanel" id="panel-email" aria-labelledby="tab-email" hidden data-panel>
+          <div class="mail">
+            <form class="mail__form form" data-email-form novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="em-name">Nome completo</label>
+                  <input id="em-name" name="name" type="text" autocomplete="name" required aria-describedby="em-name-err">
+                  <p class="field__error" id="em-name-err" data-error-for="em-name"></p>
+                </div>
+                <div class="field">
+                  <label for="em-email">E-mail</label>
+                  <input id="em-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="em-email-err">
+                  <p class="field__error" id="em-email-err" data-error-for="em-email"></p>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="em-phone">WhatsApp <span class="field__opt">(opcional)</span></label>
+                  <input id="em-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(19) 99999-9999" aria-describedby="em-phone-err" data-phone>
+                  <p class="field__error" id="em-phone-err" data-error-for="em-phone"></p>
+                </div>
+                <div class="field">
+                  <label for="em-treatment">Motivo da consulta</label>
+                  <select id="em-treatment" name="treatment">
+                    <option>Avaliação (consulta VIP)</option>
+                    <option>Protocolo: dentes fixos</option>
+                    <option>Implantes</option>
+                    <option>Facetas em porcelana</option>
+                    <option>Clareamento dental</option>
+                    <option>Próteses</option>
+                    <option>Tratamento de canal</option>
+                    <option>Limpeza e profilaxia</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <fieldset class="field">
+                  <legend>Melhor período</legend>
+                  <div class="choice-group">
+                    <label class="choice"><input type="radio" name="period" value="Manhã" checked><span><i class="ph-light ph-sun" aria-hidden="true"></i>Manhã</span></label>
+                    <label class="choice"><input type="radio" name="period" value="Tarde"><span><i class="ph-light ph-sun-horizon" aria-hidden="true"></i>Tarde</span></label>
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="em-date">Data de preferência <span class="field__opt">(opcional)</span></label>
+                  <input id="em-date" name="date" type="date" aria-describedby="em-date-err">
+                  <p class="field__error" id="em-date-err" data-error-for="em-date"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="em-msg">Mensagem <span class="field__opt">(opcional)</span></label>
+                <textarea id="em-msg" name="message" rows="3" aria-describedby="em-msg-help"></textarea>
+                <p class="field__help" id="em-msg-help">Conte o que você quer tratar ou tire uma dúvida.</p>
+              </div>
+
+              <div class="field">
+                <label class="check">
+                  <input type="checkbox" name="consent" id="em-consent" required aria-describedby="em-consent-err">
+                  <span>Autorizo a Rapidodent a usar meus dados para retornar o contato, conforme a LGPD.</span>
+                </label>
+                <p class="field__error" id="em-consent-err" data-error-for="em-consent"></p>
+              </div>
+
+              <button class="btn btn--wine" type="submit">
+                <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+                Enviar solicitação
+              </button>
+            </form>
+
+            <div class="mail__done" data-email-done hidden tabindex="-1">
+              <span class="done__icon"><i class="ph ph-envelope-simple-open" aria-hidden="true"></i></span>
+              <p class="step__title">Sua solicitação está pronta</p>
+              <p class="step__hint">Abrimos seu aplicativo de e-mail com a mensagem preenchida. É só enviar. A equipe retorna para confirmar data e horário.</p>
+              <p class="step__hint">Não abriu? Escreva para <a href="mailto:contato@rapidodent.com.br" data-clinic-email>contato@rapidodent.com.br</a>.</p>
+              <button class="link-btn" type="button" data-email-restart>Nova solicitação</button>
+            </div>
+
+            <aside class="mail__aside">
+              <p class="mail__aside-title">Como funciona</p>
+              <ol role="list">
+                <li><i class="ph-light ph-note-pencil" aria-hidden="true"></i>Você envia sua preferência de dia e período.</li>
+                <li><i class="ph-light ph-chats-circle" aria-hidden="true"></i>A equipe responde para confirmar o horário.</li>
+                <li><i class="ph-light ph-calendar-check" aria-hidden="true"></i>Sua consulta VIP fica agendada.</li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULTADOS (galeria com scroll-snap) ============ -->
+    <!-- TODO: substituir por fotos reais de pacientes da clínica (com autorização e dentro das normas do CFO). -->
+    <section class="section results" aria-labelledby="results-title">
+      <div class="container results__head" data-reveal>
+        <h2 class="h2" id="results-title">Sorrisos que voltaram a aparecer.</h2>
+        <div class="results__nav">
+          <button class="icon-btn" type="button" data-gallery-prev aria-label="Fotos anteriores"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+          <button class="icon-btn" type="button" data-gallery-next aria-label="Próximas fotos"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="gallery" data-gallery tabindex="0" aria-label="Galeria de sorrisos">
+        <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?auto=format&fit=crop&w=700&q=75" alt="Mulher sorrindo" loading="lazy" width="700" height="933"></figure>
+        <figure class="gallery__item gallery__item--wide"><img src="https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=1000&q=75" alt="Close de sorriso" loading="lazy" width="1000" height="750"></figure>
+        <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?auto=format&fit=crop&w=700&q=75" alt="Homem sorrindo" loading="lazy" width="700" height="933"></figure>
+        <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?auto=format&fit=crop&w=700&q=75" alt="Mulher sorrindo olhando para baixo" loading="lazy" width="700" height="933"></figure>
+        <figure class="gallery__item gallery__item--wide"><img src="https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?auto=format&fit=crop&w=1000&q=75" alt="Mulher sorrindo ao ar livre" loading="lazy" width="1000" height="750"></figure>
+        <figure class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?auto=format&fit=crop&w=700&q=75" alt="Mulher sorrindo com as mãos no rosto" loading="lazy" width="700" height="933"></figure>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS (acordeão) ============ -->
+    <section class="section faq" id="duvidas" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__intro" data-reveal>
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 class="h2" id="faq-title">Antes de agendar</h2>
+          <p class="lead">Não encontrou sua pergunta? A equipe responde pelo WhatsApp.</p>
+        </div>
+
+        <div class="faq__list" data-faq>
+          <div class="faq__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">A primeira consulta é gratuita?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div><p>Sim. A primeira consulta VIP é gratuita, dura cerca de 1 hora e inclui avaliação com scanner 3D e câmera intraoral.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">Como faço para agendar?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn"><div><p>Pelo WhatsApp (19) 99107-6349 ou pelo telefone fixo. Todo atendimento é feito com hora marcada.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Em quanto tempo fico com dentes fixos no protocolo?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn"><div><p>A cirurgia e a prótese são finalizadas em apenas 3 dias. O prazo do seu caso é confirmado na avaliação.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">Como é a cirurgia de implante?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn"><div><p>Com a cirurgia guiada, a posição de cada implante é planejada digitalmente antes. O procedimento é simples, sem pontos, com uma abertura do tamanho de um furo de brinco.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">Onde fica a clínica?<i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><div><p>Rua Henrique Cabral de Vasconcelos, 2120, Jardim São Nicolau (DER), São João da Boa Vista, SP.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL + CONTATO (bloco vinho) ============ -->
+    <section class="contact" id="contato" aria-labelledby="contact-title" data-contact>
+      <div class="container contact__grid">
+        <div class="contact__copy" data-reveal>
+          <img class="contact__logo" src="assets/img/logo-rd.png" alt="" width="52" height="72">
+          <h2 class="h2 h2--on-wine" id="contact-title">Pronto para dar o próximo passo?</h2>
+          <p class="lead lead--on-wine">Sua primeira consulta VIP é gratuita. Fale com a Rapidodent e escolha seu horário.</p>
+          <a class="btn btn--light btn--lg" href="https://wa.me/5519991076349" data-wa>
+            <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+            Agendar consulta
+          </a>
+
+          <dl class="contact__info">
+            <div>
+              <dt><i class="ph-light ph-map-pin" aria-hidden="true"></i>Endereço</dt>
+              <dd>Rua Henrique Cabral de Vasconcelos, 2120<br>Jardim São Nicolau (DER)<br>São João da Boa Vista, SP, 13876-100</dd>
+            </div>
+            <div>
+              <dt><i class="ph-light ph-phone" aria-hidden="true"></i>WhatsApp</dt>
+              <dd><a href="https://wa.me/5519991076349" data-wa>(19) 99107-6349</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="contact__map" data-reveal>
+          <iframe
+            title="Mapa com a localização da Rapidodent"
+            src="https://maps.google.com/maps?q=Rua%20Henrique%20Cabral%20de%20Vasconcelos%2C%202120%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20SP&z=15&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container footer__row">
+          <p>&copy; <span data-year>2026</span> Rapidodent. Todos os direitos reservados.</p>
+          <!-- TODO: confirmar nome e CRO do responsável técnico (exigência do CFO para publicidade odontológica). -->
+          <p>Responsável técnico: [Nome] CRO-SP [número]</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- CTA fixo no mobile: aparece depois do hero, some no contato -->
+  <div class="mobile-cta" data-mobile-cta aria-hidden="true">
+    <a class="btn btn--wine btn--block" href="https://wa.me/5519991076349" data-wa tabindex="-1">
+      <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+      Agendar consulta
+    </a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
